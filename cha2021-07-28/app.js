@@ -17,5 +17,10 @@
 getDrinkByProfession('poLiTician') // 'Your tax dollars'
 
 function getDrinkByProfession(patron){
+    // define object
+    
+    // convert patron to lower case
+    // index object to find patron's drink
+    // use ternary operator to handle undefined default case
 
 }
