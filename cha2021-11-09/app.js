@@ -7,5 +7,5 @@ summation(8) // 36
 
 
 function summation(n){
-    
+    return n * (n + 1) / 2
 }
