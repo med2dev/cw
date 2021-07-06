@@ -11,5 +11,5 @@ quadratic(4,-9)   // [1, 5, -36]
 quadratic(5,-4)   // 1, -1, -20]
 
 function quadratic(x1, x2){
-    
+
 }
