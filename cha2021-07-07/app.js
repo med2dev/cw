@@ -27,5 +27,5 @@ const welcomes = {
 }
 
 function greet(language){
-    
+    return welcomes[language] || 'Welcome'
 }
