@@ -14,5 +14,5 @@ arrayMadness([5,3,2,4,1],[15]) // false
 const sumOfPowers = (arr, power) => arr.reduce((p, c) => p + Math.pow(c, power), 0)
 
 function arrayMadness(a, b){
-    
+    return sumOfPowers(a, 2) > sumOfPowers(b, 3)
 }
