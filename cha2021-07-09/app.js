@@ -11,6 +11,8 @@ arrayMadness([2,3,4],[1,2,3]) // false
 arrayMadness([1,2,3],[0,1,2]) // true
 arrayMadness([5,3,2,4,1],[15]) // false
 
+const sumOfPowers = (arr, power) => arr.reduce((p, c) => p + Math.pow(c, power), 0)
+
 function arrayMadness(a, b){
     
 }
