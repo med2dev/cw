@@ -16,5 +16,6 @@ correctPolishLetters("Lech Wałęsa")                 // "Lech Walesa"
 correctPolishLetters("Maria Skłodowska-Curie")      // "Maria Sklodowska-Curie"
 
 function correctPolishLetters(s){
-
+    // I don't believe there is a corresponding translation map function like python
+    // so we probably have to do these one at a time
 }
