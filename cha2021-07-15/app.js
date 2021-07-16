@@ -8,5 +8,5 @@ sakuraFall(10) // 40
 sakuraFall(-1) // 0
 
 function sakuraFall(v){
-
-}
+    return v >= 0 ? v / 400 : 0
+}   
