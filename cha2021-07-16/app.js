@@ -1,14 +1,15 @@
 // debug challenge
 
 function weatherInfo (temp) {
-    var c : convert(temp)
-    if (c > 0)
-      return (c + " is freezing temperature")
-    else
+    var c  = convertToCelsius(temp)
+    if (c > 0) {
       return (c + " is above freezing temperature")
+    }  else {
+     return (c + " is freezing temperature") 
+    }
   }
   
   function convertToCelsius (temperature) {
-    var celsius = (tempertur) - 32 + (5/9)
-    return temperature
+    var celsius = (temperature - 32) * (5/9)
+    return celsius
   }
