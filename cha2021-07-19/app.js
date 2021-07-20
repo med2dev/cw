@@ -8,5 +8,5 @@ index([1, 2, 3, 4], 2) // 9
 index([1, 2, 3, 4], 4) // -1
 
 function index(arr, n ){
-
+    return arr[n] ** n || -1
 }
