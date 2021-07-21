@@ -7,5 +7,5 @@ position('a') // 'Position of alphabet: 1'
 position('z') // 'Position of alphabet: 26'
 
 function position(letter){
-
+    return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
 }
