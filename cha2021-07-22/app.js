@@ -9,3 +9,4 @@ arr(2) // [0, 1]
 
 
 
+const arr = n => Array.from({length: n || 0}, (v, k) => k)
