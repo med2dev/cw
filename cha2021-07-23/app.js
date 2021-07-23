@@ -8,5 +8,5 @@ toBinary(3) // 11
 toBinary(4) // 100
 
 function toBinary(n){
-
+    return +n.toString(2)
 }
