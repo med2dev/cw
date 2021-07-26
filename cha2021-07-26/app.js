@@ -5,5 +5,5 @@ bonusTime(10000, true) // '£100000'
 
 
 function bonusTime(salary, bonus){
-
+    return bonus ? `£${salary * 10}` : `£${salary}`
 }
