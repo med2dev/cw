@@ -18,9 +18,16 @@ getDrinkByProfession('poLiTician') // 'Your tax dollars'
 
 function getDrinkByProfession(patron){
     // define object
-    
+    const drinks = {
+        'jabroni' : 'Patron Tequila',
+        'school counselor' : 'Anything with Alcohol',
+        'programmer': 'Hipster Craft Beer',
+        'bike gang member' : 'Moonshine',
+        'politician' : 'Your tax dollars',
+        'rapper' : 'Cristal'
+    }
     // convert patron to lower case
     // index object to find patron's drink
-    // use ternary operator to handle undefined default case
-
+    // return value OR 'Beer' to handle undefined case
+    return drinks[patron.toLowerCase()] || 'Beer'
 }
