@@ -13,3 +13,5 @@ function nextId(ids){
     // add one to the last
 
 }
+
+// TODO: handle array without duplicates
