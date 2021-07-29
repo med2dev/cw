@@ -11,7 +11,7 @@ function nextId(ids){
     // sort 
     const sortedIds = [...setIds].sort((a, b) => a - b)
     // filter array for values that are equal to their index
-    return sortedIds.filter((e, i) => e == i).pop() + 1
+    return sortedIds.filter((e, i) => e == i).pop() + 1 || 0
     // add one to the last
 
 }
