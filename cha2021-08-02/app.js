@@ -12,3 +12,5 @@ ball2.ballType // 'super'
 const Ball = function(ballType = 'regular'){
     return numbers.filter(v => v % divisor == 0)
 }
+
+// note: this is the old school method for creating a class in JS
