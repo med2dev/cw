@@ -15,10 +15,14 @@ warnTheSheep(['sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep']) // 'Oi! Shee
 
 
 function warnTheSheep(queue){
-        // find the index position of the wolf element
+    // find the index position of the wolf element
+    const wolfIndex = queue.findIndex('wolf')
     // add one to find the sheep index
+    const sheepIndex = wolfIndex + 1
     // subtract the array length to find the sheep number according 
     // to the numbering system described above
+    const sheepNumber = queue.length - sheepIndex
     // if it's 0, return the first message
     // otherwise, return the sheep warning message
+    return sheepNumber > 0 ? `Oi! Sheep number ${sheepNumber}! You are about to be eaten by a wolf!` : 'Pls go away and stop eating my sheep'
 }
