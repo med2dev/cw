@@ -16,7 +16,7 @@ warnTheSheep(['sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep']) // 'Oi! Shee
 
 function warnTheSheep(queue){
     // find the index position of the wolf element
-    const wolfIndex = queue.findIndex('wolf')
+    const wolfIndex = queue.findIndex(element => element == 'wolf')
     // add one to find the sheep index
     const sheepIndex = wolfIndex + 1
     // subtract the array length to find the sheep number according 
