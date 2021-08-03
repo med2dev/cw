@@ -15,6 +15,10 @@ warnTheSheep(['sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep']) // 'Oi! Shee
 
 
 function warnTheSheep(queue){
-    
-
+        // find the index position of the wolf element
+    // add one to find the sheep index
+    // subtract the array length to find the sheep number according 
+    // to the numbering system described above
+    // if it's 0, return the first message
+    // otherwise, return the sheep warning message
 }
