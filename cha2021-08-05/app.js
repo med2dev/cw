@@ -18,7 +18,7 @@ function uefaEuro2016(teams, scores){
     //      scores[0] > scores[1]
     //      everything else
     if (scores[0] == scores[1]){
-        return `${match}, teams played raw.`
+        return `${match}, teams played draw.`
     } else if (scores[0] > scores[1]){
         return `${match}, ${teams[0]} won!`
     } else {
