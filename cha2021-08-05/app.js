@@ -12,9 +12,17 @@ uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, te
 
 function uefaEuro2016(teams, scores){
     // assign string 'At match team1 - team2' string, which is constant
+    const match = `At match teams[0] - teams[1]`
     // return based on logic tree
-    //      score[0] == score[1]
-    //      score[0] > score[1]
+    //      scores[0] == scores[1]
+    //      scores[0] > scores[1]
     //      everything else
+    if (scores[0] == scores[1]){
+        return `${match}, teams played raw.`
+    } else if (scores[0] > scores[1]){
+        return `${match}, ${team[0]} won!`
+    } else {
+        return `${match}, ${team[1]} won!`
+    }
 
 }
