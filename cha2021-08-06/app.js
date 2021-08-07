@@ -5,5 +5,5 @@
 grow([1, 2, 3]) // 6
 
 function grow(arr){
-
+    return arr.reduce((p, c) => p * c)
 }
