@@ -23,3 +23,9 @@ function Ship(draft, crew){
         return this.draft - (this.crew * 1.5) > 20
     }
 }
+
+// alternate method to define an object method
+
+Ship.prototype.isWorthIt = function(){
+    return this.draft - (this.crew * 1.5) > 20
+}
