@@ -17,5 +17,6 @@ let emptyShip = new Ship(0, 0)
 emptyShip.isWorthIt() // false
 
 function Ship(draft, crew){
-
+    this.draft = draft
+    this.crew = crew 
 }
