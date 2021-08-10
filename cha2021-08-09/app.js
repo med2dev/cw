@@ -9,5 +9,5 @@ validateUsr('Jk42_c') // false
 
 
 function validateUsr(username) {
-
+    return /^[a-z0-9_]$/.test(username)
 }
