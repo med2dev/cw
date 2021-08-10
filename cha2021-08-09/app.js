@@ -9,5 +9,8 @@ validateUsr('Jk42_c') // false
 
 
 function validateUsr(username) {
-    return /^[a-z0-9_]$/.test(username)
+    const validLength = 3 < username.length && 17 > username.length
+    const validCharacters =  /^[a-z0-9_]*$/.test(username)
+    return validLength && validCharacters
 }
+// recall, character classes only match a single character. You need a *
