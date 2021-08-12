@@ -5,5 +5,5 @@
 templeStrings('Animals', 'Good') // 'Animals are Good'
 
 function templeStrings(obj, feature){
-
+    return `${obj} are ${feature}`
 }
