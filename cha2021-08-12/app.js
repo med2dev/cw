@@ -13,5 +13,12 @@ logicalCalc([true, false, true], 'XOR') // false
 
 
 function logicalCalc(array, op){
-
+    // define functions for reduce
+    const AND = (x, y) => x && y
+    const OR = (x, y) => x || y
+    const XOR = (x, y) => x != y
+    // choose operation
+    const f = op == 'AND' ? AND : op == 'OR' ? OR : XOR
+    // sequential operations described in the requirements is used by reduce
+    return array.reduce(f)
 }
