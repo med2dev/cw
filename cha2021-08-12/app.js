@@ -22,3 +22,25 @@ function logicalCalc(array, op){
     // sequential operations described in the requirements is used by reduce
     return array.reduce(f)
 }
+
+// you could simply evaluate op rather than assign it to f
+
+function logicalCalcDanger(array, op){
+    const AND = (x, y) => x && y
+    const OR = (x, y) => x || y
+    const XOR = (x, y) => x != y
+    return array.reduce(eval(op))
+}
+
+// but, of course, that's a security risk
+
+// alternatively, you could put the functions in an object that op can index
+
+function logicalCalcBetter(array, op){
+    reducers = {
+        'AND' : (x, y) => x && y,
+        'OR' : (x, y) => x || y,
+        'XOR' : (x, y) => x != y
+    }
+    return array.reduce(reducers[op])
+}
