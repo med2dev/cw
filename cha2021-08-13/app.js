@@ -1,14 +1,17 @@
 // debug challenge
 
-function correctTail(bod, tail ;
-  
-    sub = body.substr(bodylength-(tail.length)
+function correctTail(body, tail){
+    let sub = body.substring(body.length - tail.length)
     
-    if sub = tail) ;
-      return true
+    if (sub == tail){
+        return true
     }
-    else 
-      return false
+    else {
+        return false
+    } 
+}
+  
+    
     
   
   
