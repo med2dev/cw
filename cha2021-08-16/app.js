@@ -10,5 +10,5 @@ function sumMix(arr){
     // otherwise, if you get an example like the above, you'll
     // end up concatenating 
     // reduce, coercing and summing elements
-    return arr.reduce((p, c) => parseInt(`${p} + ${c}`))
+    return arr.reduce((p, c) => Number(p) + Number(c))
 }
