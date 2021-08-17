@@ -12,3 +12,10 @@ function sumMix(arr){
     // reduce, coercing and summing elements
     return arr.reduce((p, c) => Number(p) + Number(c))
 }
+
+// introducing the unary plus operator
+const sumMix2 = arr => arr.reduce((p,c) => +p + +c)
+
+// alternate
+const sumMix3 = arr => arr.reduce((p,c) => p + +c, 0)
+// if the initial value is a number, than p + +c will always be a number
