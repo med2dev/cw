@@ -9,3 +9,8 @@ mouthSize('alligator') // 'small'
 function mouthSize(animal){
     return animal == 'alligator' ? 'small' : 'wide'
 }
+
+// case insensitive
+function mouthSizeInsensitive(animal){
+    return /animal/i.test(animal) ? 'small' : 'wide'
+}
