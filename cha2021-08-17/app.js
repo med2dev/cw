@@ -12,5 +12,5 @@ function mouthSize(animal){
 
 // case insensitive
 function mouthSizeInsensitive(animal){
-    return /animal/i.test(animal) ? 'small' : 'wide'
+    return /alligator/i.test(animal) ? 'small' : 'wide'
 }
