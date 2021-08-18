@@ -14,3 +14,11 @@ function mouthSize(animal){
 function mouthSizeInsensitive(animal){
     return /alligator/i.test(animal) ? 'small' : 'wide'
 }
+
+// other case insensitive solution: (have this in your back pocket any time you 
+// need a nonregex solution to a case insensitive match)
+function mouthSizeInsensitiveNonRegex(animal){
+    return animal.toLowerCase() == 'alligator' ? 'small' : 'wide'
+}
+
+// if you need a case insensitive match, force the case
