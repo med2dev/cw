@@ -23,4 +23,38 @@ function swapValues() {
     // nothing is returned
 }
 
-// as a side effect, the global variable arr now has swapped values
+// as a side effect, arr now has swapped values
+
+// How does this work despite not modifying arr directly? 
+// It appears the argument object contains a reference to the same object in
+// memory that is passed as an argument. It is a shallow copy. 
+
+// Because it is passed as an argument, it doesn't need to be a global variable
+// see:
+let anotherArr = [1, 3]
+swapValues(anotherArr)
+anotherArr // [3, 1]
+
+// do we even need to use the arguments object? What if we provide a parameter?
+function swapValues2(a){
+    let temp = a[0]
+    a[0] = a[1]
+    a[1] = temp
+}
+
+anotherArr = [1, 3]
+swapValues2(anotherArr)
+anotherArr // [3, 1]
+
+// No, the behavior of arguments as references to the same object in memory
+// does not depend on using the arguments object
+
+// SO, there are two learning objectives here:
+// 1. There exists an arguments object that is accessible inside functions
+//      It is indexible and has a length property, but otherwise does not have
+//      access to array methods unless you assign it to an array in the
+//      function body
+
+// 2. Arguments are shallow copies. If you mutate the input, that will be 
+//      a side effect. Here, that's a desired behavior. In other cases it
+//      
