@@ -8,5 +8,5 @@ xor(false, true) // true
 xor(false, false) // false
 
 function xor(a, b){
-
+    return (a && !b) || (!a && b)
 }
