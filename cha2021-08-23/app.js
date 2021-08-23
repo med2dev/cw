@@ -11,5 +11,11 @@ closeCompare(4, 5, 2) // 0
 closeCompare(8, 5, 2) // 1
 
 function closeCompare(a, b, c = 0){
-
+    if (a < (b - c)){
+        return -1
+    } else if (a > b + c){
+        return 1
+    } else {
+        return 0
+    }
 }
