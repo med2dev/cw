@@ -19,3 +19,10 @@ function closeCompare(a, b, c = 0){
         return 0
     }
 }
+
+// using Math.sign
+
+function closeCompare2(a, b, c = 0){
+    // Math.sign returns -1, 1, or 0
+    return Math.abs(a - b) <= c ? 0 : Math.sign(a - b)
+}
