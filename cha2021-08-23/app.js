@@ -6,6 +6,9 @@
 //      if a < b and not close to b, return -1
 
 // E:
+closeCompare(4, 5) // -1
+closeCompare(4, 5, 2) // 0
+closeCompare(8, 5, 2) // 1
 
 function closeCompare(a, b, c = 0){
 
