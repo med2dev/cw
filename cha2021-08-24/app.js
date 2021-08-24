@@ -6,6 +6,5 @@
 all([1, 2, 3], v => v < 4) // true
 all([7, 5, 20], v => v % 2) // false
 
-function all(arr, fun){
-
-}
+// this is a builtin method for arrays
+const all = (arr, fun) => arr.every(fun)
