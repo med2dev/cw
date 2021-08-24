@@ -8,3 +8,7 @@ all([7, 5, 20], v => v % 2) // false
 
 // this is a builtin method for arrays
 const all = (arr, fun) => arr.every(fun)
+
+// TODO: learn this syntax
+
+const all2 = Function.prototype.call.bind(Array.prototype.every)
