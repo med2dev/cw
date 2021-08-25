@@ -5,6 +5,6 @@
 isDigit('-3.2') // true
 isDigit('-3.2 - 4') // false
 
-function isDigit(){
-
+function isDigit(s){
+    return parseFloat(s) == s
 }
