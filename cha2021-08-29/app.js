@@ -6,5 +6,6 @@
 multipleOfIndex([4, 3, 2, 7]) // [3, 2]
 
 function multipleOfIndex(arr){
-
+    // filter the array using the test element % i == 0
+    return arr.filter((element, index) => element % index == 0)
 }
