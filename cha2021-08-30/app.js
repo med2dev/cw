@@ -10,3 +10,5 @@ function strCount(string, substring){
     const matches = string.matches(substring)
     return match ? matches.length : 0
 }
+
+// TODO: solve without regex
