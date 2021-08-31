@@ -19,4 +19,16 @@ function strCount2(string, letter){
     return string.split(letter).length - 1
     // yes, this works with the beginning and ending character
     // split will leave an empty string
+
+    // edge case problem: if letter is the empty string, you'll get 1 - length
+    // validate letter is a character
+    // this works for substring larger than one character
+}
+
+// Further imp
+
+function strCount3(string, letter){
+    // filter, then length
+    return string.split('').filter(element == letter).length
+    // this ONLY works for one character values of letter
 }
