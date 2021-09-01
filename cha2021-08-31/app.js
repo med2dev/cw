@@ -8,8 +8,9 @@ twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "pe
 twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]) // 'a***r***e'
 
 function twoSort(s){
-    let copy = [...s]
-    const sorted = copy.sort()
+    const sorted = s.sort()
     let first = sorted[0]
     return first.split('').join('***')
 }
+
+// by don't mutate the array, apparently they don't mean you can't use sort
