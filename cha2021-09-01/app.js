@@ -7,5 +7,8 @@
 stairsIn20([[1, 2], [3, 4], [5, 6]]) // 21
 
 function stairsIn20(steps){
-
+    // flatten
+    const flattened = steps.flat()
+    // reduce and multiply by 20
+    return flattened.reduce((p, c) => p + c) * 20
 }
