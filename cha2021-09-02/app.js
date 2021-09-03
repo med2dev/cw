@@ -6,5 +6,8 @@ ensureQuestion('hello world') // 'hello world?'
 ensureQuestion('hello world?') // 'hello world?'
 
 function ensureQuestion(s){
-
+    // check for a question mark at the end
+    // if there is one, return the string as is
+    // if not, add a question mark and return
+    return s[s.length - 1] == '?' ? s : s + '?'
 }
