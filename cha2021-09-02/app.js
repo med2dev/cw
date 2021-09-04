@@ -11,3 +11,8 @@ function ensureQuestion(s){
     // if not, add a question mark and return
     return s[s.length - 1] == '?' ? s : s + '?'
 }
+
+// recall, there is a builtin, so you can do this as follows
+function ensureQ(s){
+    return s.endsWith('?') ? s : s + '?'
+}
