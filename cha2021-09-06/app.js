@@ -9,6 +9,7 @@
 validateHello('ajoh') // true
 validateHello('bip') // false
 
+const regex = /hello|ciao|salut|hallo|hola|ajoh|czesc/i
 function validateHello(greeting){
-
+    return regex.test(greeting)
 }
