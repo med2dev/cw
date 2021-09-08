@@ -19,7 +19,7 @@ function multiTable(n){
 function multiTable2(n){
     let res=""
     for (let i = 1; i< 11; ++i){
-        res +=`i * ${n} = ${i * n}\n`
+        res +=`{i} * ${n} = ${i * n}\n`
     }
     return res
 }
