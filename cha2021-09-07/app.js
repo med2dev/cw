@@ -21,5 +21,6 @@ function multiTable2(n){
     for (let i = 1; i< 11; ++i){
         res +=`{i} * ${n} = ${i * n}\n`
     }
-    return res
+    // trim the final newline
+    return res.slice(0, -1)
 }
