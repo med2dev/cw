@@ -15,3 +15,11 @@ function multiTable(n){
 
 // TODO: generate the string in a loop, instead of typing all of that
 // this also allows you to pass a second variable for the length of the table
+
+function multiTable2(n){
+    let res=""
+    for (let i = 1; i< 11; ++i){
+        res +=`i * ${n} = ${i * n}\n`
+    }
+    return res
+}
