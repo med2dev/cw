@@ -10,6 +10,8 @@
 htmlspecialchars("<h2>Hello World</h2>") // "&lt;h2&gt;Hello World&lt;/h2&gt;"
 htmlspecialchars("Hello, how would you & I fare?") // "Hello, how would you &amp; I fare?"
 
+// TODO: helper functions for each sanitize operation
+
 function htmlspecialchars(formData) {
     
 }
