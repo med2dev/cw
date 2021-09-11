@@ -9,7 +9,7 @@ distinct([2, 1, 4]) // [2, 1, 4]
 function distinct(arr){
     const res = []
     for (i = 0; i < arr.length; ++i){
-        if (! res.includes(arr[i])) arr.push(arr[i])
+        if (! res.includes(arr[i])) res.push(arr[i])
     }
     return res
 }
