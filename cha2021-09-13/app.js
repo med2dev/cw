@@ -6,5 +6,5 @@ sayHello(['John', 'Smith'], 'Phoenix', 'Arizona') // 'Hello, John Smith! Welcome
 
 
 function sayHello(name, city, state){
-
+    return `Hello ${name.join(' ')}! Welcome to ${city}, ${state}`
 }
