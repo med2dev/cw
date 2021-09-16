@@ -1,6 +1,6 @@
 // P: yet another debug assignment
 
-var a == "dev"
-var b == "Lab"
+var a = "dev"
+var b = "Lab"
 
-var name == a + b
+var name = a + b
