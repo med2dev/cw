@@ -6,5 +6,5 @@ howManyLightSabersDoYouOwn('Adam') // 0
 howManyLightSabersDoYouOwn('Zach') // 18
 
 function howManyLightSabersDoYouOwn(name){
-
+    return name == 'Zach' ? 18 : 0
 }
