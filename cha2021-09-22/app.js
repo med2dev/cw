@@ -6,5 +6,5 @@ spEng("eNglisH") // true
 spEng('egnlish') // false
 
 function spEng(sentence){
-
+    return Boolean(sentence.match(/english/i))
 }
