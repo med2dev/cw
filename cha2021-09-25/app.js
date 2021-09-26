@@ -6,5 +6,6 @@ mango(3, 3) // 6
 mango(9, 5) // 30
 
 function mango(quantity, price){
-
+    const charge = quantity - Math.floor(quantity / 3)
+    return charge * price
 }
