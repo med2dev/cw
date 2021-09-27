@@ -6,5 +6,5 @@ past(0, 1, 1) // 61000
 past(1, 0, 0) // 3600000
 
 function past(h, m, s){
-
+    return s*1000 + m * 60000 + h * 3600000
 }
