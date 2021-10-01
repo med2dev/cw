@@ -4,5 +4,5 @@
 
 function addFive(num) {
     var total = num + 5
-    return num
+    return total
   }
