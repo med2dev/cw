@@ -6,7 +6,7 @@
 expressionMatter(2, 1, 2) // 6
 expressionMatter(2, 1, 1, ) // 4
 
-
+// implementation that allows different order of a, b, c
 function expressionMatter(a, b, c){
     // filter the ones
     const ones = [a, b, c].filter(element => element == 1)
@@ -16,4 +16,8 @@ function expressionMatter(a, b, c){
     if (ones.length == 2) return 2 * moreThanOnes[0]
     if (ones.length == 1) return (1 + moreThanOnes[0]) * moreThanOnes[1]
     return a * b * c
+}
+
+function expressionMattersOrderMatters(a, b, c){
+    return Math.max(a + b + c, a * (b + c), (a + b) * c, a * b * c)
 }
