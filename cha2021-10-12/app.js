@@ -35,6 +35,9 @@ function booltoWordIfElse(bool){
 
 // abbreviated ifelse implementation
 function boolToWordAbbrev(bool){
+    // one line doesn't require curly braces
     if (bool) return 'Yes'
+    // no else needed. if above expression runs, function returns and exits stack
+    // if the function hasn't returned, if hasn't triggered, and you return 'No'
     return 'No'
 }
