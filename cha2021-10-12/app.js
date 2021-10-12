@@ -25,9 +25,16 @@ function booltoWordSwitch(bool){
 
 // full ifelse implementation
 function booltoWordIfElse(bool){
+    // standard ifelse syntax
     if (bool){
         return 'Yes'
     } else {
         return 'No'
     }
+}
+
+// abbreviated ifelse implementation
+function boolToWordAbbrev(bool){
+    if (bool) return 'Yes'
+    return 'No'
 }
