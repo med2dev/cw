@@ -11,8 +11,13 @@ function boolToWord(bool){
 }
 
 function booltoWordSwitch(bool){
+    // switch implementation
+    // switch(expression)
     switch (bool){
+        // case value: do something
         case true: return 'Yes'
+        // as many cases as you please
+        // then default: do something
         default: return 'No'
     }
 }
