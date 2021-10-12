@@ -9,3 +9,11 @@ function boolToWord(bool){
     // if bool is true, return 'Yes', else 'No'
     return bool ? 'Yes' : 'No'
 }
+
+function booltoWordSwitch(bool){
+    switch (bool){
+        case true: return 'Yes'
+        default: return 'No'
+    }
+}
+
