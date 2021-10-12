@@ -5,13 +5,14 @@
 boolToWord(true) // 'Yes'
 boolToWord(false) // 'No'
 
+// ternary operator implementation
 function boolToWord(bool){
     // if bool is true, return 'Yes', else 'No'
     return bool ? 'Yes' : 'No'
 }
 
+// switch implementation
 function booltoWordSwitch(bool){
-    // switch implementation
     // switch(expression)
     switch (bool){
         // case value: do something
@@ -22,3 +23,11 @@ function booltoWordSwitch(bool){
     }
 }
 
+// full ifelse implementation
+function booltoWordIfElse(bool){
+    if (bool){
+        return 'Yes'
+    } else {
+        return 'No'
+    }
+}
