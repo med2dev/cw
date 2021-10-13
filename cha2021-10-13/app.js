@@ -15,4 +15,8 @@ getRealFloor(-3) // -3
 
 
 function getRealFloor(n){
+    // if > 13, return n - 2
+    // if > 0, return n - 1
+    // else return n
+    return n > 13 ? n - 2 : n > 0 ? n - 1 : n
 }
