@@ -33,3 +33,8 @@ let translationTable = {
 function correct2(string){
     string.replace(/[501]/g, match => translationTable[match])
 }
+
+// learning objective: the function argument to replace takes the match in as an argument
+// so yes, you can replace the match with different values depending on what it is
+// Here, the idiom is, use a character class so that any of the possible matches match
+// then, use that match to determine what to replace it with
