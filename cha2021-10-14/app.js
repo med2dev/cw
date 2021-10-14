@@ -16,8 +16,20 @@ const trans0toO = s => s.replace(/0/g, 'O')
 const trans1toI = s => s.replace(/1/g, 'I')
 
 function correct(string){
-    // 5 to S
     const string5toS = trans5toS(string)
     const string0toO = trans0toO(string5toS)
     return trans1toI(string0toO)
+}
+
+
+// dictionary replace implementation
+
+let translationTable = {
+    5: 'S',
+    0: 'O',
+    1: 'I'
+}
+
+function correct2(string){
+    string.replace(/[501]/g, match => translationTable[match])
 }
