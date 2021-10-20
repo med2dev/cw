@@ -1,5 +1,6 @@
 // P: a number, p
-// R: Boolean, does the input solve the condition, ((p-1)! + 1)/(p*p) is a whole number
+// R: Boolean, is it a Wislon prime
+//      e.g., does the input solve the condition, ((p-1)! + 1)/(p*p) is a whole number
 
 // E:
 amIWilson(5) // true
@@ -14,4 +15,8 @@ function factorial(n){
 }
 
 function amIWilson(p){
+    // generate the value in the expression
+    const val = (factorial(p - 1) + 1) / (p * p)
+    // test for a whole number
+    return Math.floor(val) == val
 }
