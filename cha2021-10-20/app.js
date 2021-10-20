@@ -8,5 +8,7 @@ twiceAsOld(42, 21) // 0
 twiceAsOld(29, 0) // 29
 
 function twiceAsOld(dad, son){
-
+    // this condition is met when the son is the age the dad was when born
+    const dadWhenSonBorn = dad - son
+    return Math.abs(son - dadWhenSonBorn)
 }
