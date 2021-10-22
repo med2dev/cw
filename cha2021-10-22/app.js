@@ -8,5 +8,6 @@
 bmi(80, 1.8) // 'Normal'
 
 function bmi(weight, height){
-
+    const val = weight / (height * height)
+    return bmi > 30 ? 'Obese' : bmi > 25 ? 'Overweight' : bmi > 18.5 ? 'Normal' : 'Underweight'
 }
