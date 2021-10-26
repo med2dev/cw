@@ -8,5 +8,6 @@ toCsvText([[0, 1, 2, 3, 4],
 
 
 function toCsvText(array){
-
+    // this is the behavior of join with a 2d array
+    return array.join('\n')
 }
