@@ -7,5 +7,8 @@
 basicOp('+', 4, 7) // 11
 
 function basicOp(operation, value1, value2){
-
+    // eval is a security risk, but it will do the job for this
+    // challenge
+    return eval(`${value1} ${operation} ${value2}`)
 }
+
