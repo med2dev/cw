@@ -9,6 +9,16 @@ twoHighest([1, 1, 1]) // [1]
 twoHighest([]) // []
 
 function twoHighest(arr){
-
+    // initialize the return array
+    let res = []
+    // sort the input array
+    let sortedArr = arr.sort((a, b) => a - b)
+    // if there are still values in the input and less than 2 in the output
+    while (res.length < 2 && sortedArr.length){
+        // get the last value in arr (will be largest)
+        let biggest = sortedArr.pop()
+        // if it's not in the result, add it to the result
+        if (! res.includes(biggest)) res.push(biggest)
+    }
+    return res
 }
-
