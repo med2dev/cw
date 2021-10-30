@@ -6,7 +6,7 @@
 invert([1, 2, 3]) // [-1, -2, -3]
 invert([1, -2, 3]) // [-1, 2, -3]
 
-function invert(array){
+function invert(arr){
     // map
-    
+    return arr.map(e => -1 * e)
 }
