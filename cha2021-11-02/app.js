@@ -4,6 +4,6 @@
 // E:
 arrayPlusArray([1, 2, 3], [4, 5, 6]) // 21
 
-function arrayPlusArray(arr2, arr2){
-
+function arrayPlusArray(arr1, arr2){
+    return [...arr1, ...arr2].reduce((p, c) => p + c)
 }
