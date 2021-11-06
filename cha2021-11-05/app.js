@@ -1,4 +1,4 @@
-// simply assign the variables and then sum them, inline
+// simply assign the variables and then sum them
 
 var laLigaGoals = 43
 var championsLeagueGoals = 10
