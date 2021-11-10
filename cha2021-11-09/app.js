@@ -23,9 +23,12 @@ function fullSummation(n){
 }
 
 function altsummation(n){
-    let result = 0
+    // initialize the result
+    let result = 1
+    // loop from 0 to 1 less than n, by 1
     for (i = 0; i < n; i++){
-        result += 1
+        // add i to the result
+        result += i
     }
     return result
 }
