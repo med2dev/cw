@@ -16,6 +16,8 @@ function summation(n){
 // actual sum implementation
 
 function fullSummation(n){
+    // generate the range
     const arr = Array.from({length:n}, (v,i) => i + 1)
+    // sum the array
     return arr.reduce((p, c) => p + c, 0)
 }
