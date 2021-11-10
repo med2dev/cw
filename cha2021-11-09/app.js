@@ -21,3 +21,11 @@ function fullSummation(n){
     // sum the array
     return arr.reduce((p, c) => p + c, 0)
 }
+
+function altsummation(n){
+    let result = 0
+    for (i = 0; i < n; i++){
+        result += 1
+    }
+    return result
+}
