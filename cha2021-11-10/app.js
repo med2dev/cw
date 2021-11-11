@@ -17,3 +17,6 @@ function findLongest(str) {
     }
     return longest
 }
+
+// refactor
+const longest = s => Math.max(...s.split(" ").map(element => element.length) )
