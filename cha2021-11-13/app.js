@@ -16,8 +16,8 @@ innerSpace('1,2') // null
 function innerSpace(str){
     // first split, by regex that includes optional space
     let arr = str.split(/, ?/)
-    
+    // check array length to return null unless > 2
     // slice out the first and last , join by a space
-    return arr.slice(1, -1).join(' ')
+    return arr.length > 2 ? arr.slice(1, -1).join(' ') : null
 
 }
