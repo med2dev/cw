@@ -7,10 +7,17 @@ innerSpace('1,2,3,4,5') // '2 3 4'
 innerSpace('') // null
 innerSpace('1,2') // null
 
-function innerSpace(arr){
-    return arr.length > 3 ? arr.slice(2,-2).split(',').join(' ') : null
-}
+
 
 // implement handle alternate input forms
 // e.g., '1, 2, 3, 4', comma and space separating
 // e.g., 'ab,cd,ef', values longer than one digit
+
+function innerSpace(str){
+    // first split, by regex that includes optional space
+    let arr = str.split(/, ?/)
+    
+    // slice out the first and last , join by a space
+    return arr.slice(1, -1).join(' ')
+
+}
