@@ -8,5 +8,7 @@ liters(3) // 1
 liters(1.4) // 0  (from this example, it is apparent we need a floor function)
 
 function liters(time) {
-    return 
+    // P: 0.5 liters per hour, do time/2
+    // floor it
+    return Math.floor(time / 2)
 }
