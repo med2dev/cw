@@ -12,3 +12,9 @@ function updateLight(current){
     }
     return  nextLight[current]
 }
+
+// logic solution
+
+function updateLightLogic(current){
+    return current == 'green' ? 'yellow' : current = 'yellow' ? 'red' : 'green'
+}
