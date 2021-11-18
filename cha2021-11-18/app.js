@@ -12,7 +12,9 @@
 getGrade(95, 90, 93) // 'A'
 
 function getGrade(s1, s2, s3){
+    // take the average
     const mean = (s1 + s2 + s3) / 3
+    // avoid else block for brevity
     if (90 <= mean) return 'A'
     if (80 <= mean) return 'B'
     if (70 <= mean) return 'C'
