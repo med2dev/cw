@@ -7,5 +7,8 @@ paperwork(-5, 5) // 0
 
 
 function paperwork(n, m){
+    // if both n and m are positive, 
+    // return n * m
+    // otherwise, return 0
     return (n > 0 && m > 0) ? n * m : 0
 }
