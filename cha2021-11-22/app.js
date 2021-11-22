@@ -12,5 +12,8 @@ dutyFree(17, 10, 500) // 294
 dutyFree(24, 35, 3000) // 357
 
 function dutyFree(a, b, c){
+    // number of purchases
+    // put n from above on one side, n = c*100/(a*b)
+    // floor, as this is the number of purchases needed to meet the threshold
     return Math.floor(c * 100 / (a * b))
 }
