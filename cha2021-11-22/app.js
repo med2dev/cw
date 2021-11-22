@@ -1,5 +1,10 @@
-// P: 3 numbers, a, b, c
-// R: the solution for n, such that n *(a * b / 100) = c
+// P: 3 numbers, a, b, c, representing the retail price, discount, and 
+//      a total cost to defray
+// R: the solution for the number of items to buy at discount
+//    such that the total savings off retail is equal to the total
+//    cost to defray
+
+// This is the solution for n, where n *(a * b / 100) = c
 
 // E: 
 dutyFree(12, 50, 1000) // 166
