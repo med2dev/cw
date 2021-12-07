@@ -22,3 +22,5 @@ function points(games){
     })
     return score
 }
+
+// TODO: reduce implementation
