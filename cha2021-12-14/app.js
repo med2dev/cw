@@ -12,3 +12,6 @@ function reverseWords(s){
     // reverse the array and join it
     return words.reverse().join(' ')
 }
+
+// one liner
+const reverseOneLiner = s =>s.split(" ").reverse().join(" ")
