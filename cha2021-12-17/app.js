@@ -4,7 +4,11 @@
 // E:
 removeChar('eloquent')  // 'loquen'
 
-function removeChar(str){
-    return str.substring(1, str.length - 1)
+function removeChar(str, trim = 1){
+    return str.substring(trim, str.length - trim)
 }
 
+// slice implementation
+function removeChar(str, trim = 1){
+    return str.slice(trim, -1 * trim)    
+}
