@@ -7,6 +7,13 @@ remove("Hi!!!") // "Hi!!"
 remove("Hi") // "Hi"
 remove("!Hi") // "!Hi"
 
+
+// no regex
 function remove(str){
     return str[str.length - 1] == "!" ? str.substring(0, str.length - 1) : str
+}
+
+// regex
+function remove(str){
+    return str.replace(/!$/, '')
 }
