@@ -16,5 +16,6 @@ function cannonsReady(gunners){
     // extract the values
     const ready = Object.values(gunners)
     // are they all 'aye'?
-    return ready.every(element => element == 'aye')      
+    // return 'Fire!' if they are, 'Shiver me timbers!' if not
+    return ready.every(element => element == 'aye') ? 'Fire!' : 'Shiver me timbers!'      
 }
