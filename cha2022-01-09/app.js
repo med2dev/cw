@@ -14,3 +14,11 @@ String.prototype.toAlternatingCase = function() {
     const alternateArr = arr.map(reverseCase)
     return alternateArr.join('')
 }
+
+// non regex implementation
+String.prototype.toAlternatingCaseNoRegex = function() {
+    const reverseCase = c => {
+        return c.toUpperCase() == c ? c.toLowerCase() : c.toUpperCase()
+    }
+    return this.split('').map(reverseCase).join('')
+}
