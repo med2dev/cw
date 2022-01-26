@@ -20,3 +20,11 @@ function between(a, b){
   }
   return res
 }
+
+/* key learning objective: this will not work with forEach. 
+Why? because forEach is not invoked for deleted or uninitialized elements
+
+*/
+
+const myArray = newArray(2)
+myArray.forEach(e => console.log('did it run?')) // doesn't run
