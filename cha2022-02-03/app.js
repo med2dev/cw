@@ -16,3 +16,20 @@ function noSpace(s){
     return s.replace(/ /g, '')
     // don't forget the g flag, so all spaces are matched
 }
+
+// similar exercise
+
+// PREP
+// P:
+//      a string that may contain 'e's
+// R: the string, with all e's replaced by 3s
+// E:
+eTo3('leet') // 'l33t'
+
+function eTo3(s){
+    return s.replace(/e/g, '3')
+}
+
+// key point, you cannot use a string, e.g., s.replace('e', '3'), because the replace
+// method will only replace the first instance when you pass a string for the first arg
+// you need a regex with a 'g' flag in order to replace all instances
