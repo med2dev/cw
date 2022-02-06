@@ -18,3 +18,9 @@ function sumOfDifferences(arr){
     return Math.max(...arr) - Math.min(...arr)
 }
 
+// challenge has a surprising edge case. Apparently it will pass arrays of different length
+// including an empty array. The empty array case expects to return 0. To handle this:
+
+function sumOfDifferences(arr){
+    return arr.length ? Math.max(...arr) - Math.min(...arr) : 0
+}
