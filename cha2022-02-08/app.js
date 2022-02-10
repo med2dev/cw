@@ -17,3 +17,11 @@ plural(Inifinity) // true
 function plural(n){
     return n == 1 ? false : true
 }
+
+// It looks like you used the ternary operator to reinforce the syntax for a return, but
+// remember, you're looking for a boolean return value, so you don't need to convert the
+// test into some other thing. Just return the test that produces the boolean you're after
+
+function betterSolution(n){
+    return n !== 1
+}
