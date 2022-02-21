@@ -35,6 +35,7 @@ function howMuchILoveYou(n){
 // smarter
 function howMuchILoveYou(n){
     // re-order the array so that when you get a remainder of 0, it extracts the correct response
+    // ** add this to anki as a good approach to keep in mind
     const responses = ['not at all', 'I love you', 'a little', 'a lot', 'passionately', 'madly']
     return responses[n%6]
 }
