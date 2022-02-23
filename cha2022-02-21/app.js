@@ -31,3 +31,10 @@ function howMuchILoveYou(n){
     const responses = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
     return responses.at((n % 6) - 1) // Array.at(-n) returns the element n + 1 from the end
 }
+
+// smarter
+function howMuchILoveYou(n){
+    // re-order the array so that when you get a remainder of 0, it extracts the correct response
+    const responses = ['not at all', 'I love you', 'a little', 'a lot', 'passionately', 'madly']
+    return responses[n%6]
+}
