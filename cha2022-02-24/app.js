@@ -13,3 +13,8 @@ dogTranslator("This is a test") // "ruff ruff ruff ruff"
 function dogTranslator(s){
     return s.replace(/\S+/g, 'ruff' )
 }
+
+// refactor without regex
+function dogTranslator(s){
+    return s ? s : s.split(' ').map((e, i, a) => a[i] = 'ruff').join(' ')
+}
