@@ -14,3 +14,7 @@ function binToDec(bin){
 
 // note, there is a builtin
 // parseInt
+
+function binToDec(bin){
+    return parseInt(bin, 2)
+}
