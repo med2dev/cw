@@ -19,3 +19,11 @@ function isNarcissistic(n){
     }
     return powerSum == n
 }
+
+// refactor using reduce
+
+function isNarcissisticReduce(n){
+    const s = String(n)
+    const digits = s.split('')
+    return digits.reduce((previous, current, index, array) => previous + current**array.length, 0)
+}
