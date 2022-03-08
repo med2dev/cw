@@ -37,7 +37,7 @@ function humanYearsCatYearsDogYears(humanYears){
         return [2, 24, 24]
     } else {
         catYears = 24 + (humanYears - 2)*4
-        dogYears = 24 + (humanYears - 2)*9
+        dogYears = 24 + (humanYears - 2)*5
         return [humanYears, catYears, dogYears]
     }
 }

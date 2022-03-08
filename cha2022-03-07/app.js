@@ -30,3 +30,16 @@ function sameCase(a, b){
         return 0
     }
 }
+
+// pattern from someone else
+
+function checkCase(s){
+    if (s == s.toLowerCase()) return 'lower'
+    if (s == s.toUpperCase()) return 'upper'
+}
+
+function sameCase(a, b){
+    if (a.match(/[^a-zA-Z]/) || b.match(/[^a-zA-Z]/)) return -1
+
+    return checkCase(a) == checkCase(b) ? 1: 0
+}
