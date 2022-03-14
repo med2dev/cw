@@ -20,3 +20,11 @@ stringy(1) // '1'
 function stringy(size){
     return '10'.repeat(Math.ceil(size / 2)).substring(0, size)   
 }
+
+// refactor using padStart
+
+function stringy(size){
+    return ''.padStart(size, '10')
+}
+
+const stringy = size => ''.padStart(size, '10')
