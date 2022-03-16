@@ -18,3 +18,12 @@ function findMultiples(integer, limit){
     }
     return result
 }
+
+// refactor using the limit itself
+function findMultiples(integer, limit){
+    res = []
+    for (let i = integer; i <= limit; i += integer){
+        res.push(i)
+    }
+    return res
+}
