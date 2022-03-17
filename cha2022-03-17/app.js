@@ -26,3 +26,8 @@ function ghostBusters(building){
     const result = building.replace(/\s+/g, '')
     return result == building ? "You just wanted my autograph didn't you?" : result
 }
+
+// refactor with test
+function ghostBusters(building){
+    return /\s/.test(building) ? building.replace(/\s+/g, '') : "You just wanted my autograph didn't you?"
+}
