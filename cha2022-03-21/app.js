@@ -21,5 +21,15 @@ function multiply(a, b){
 }
 
 function billboard(name, price = 30){
-    return multiply(n, price)
+    return multiply(name.length, price)
 }
+
+// refactor
+function billboard(name, price = 30){
+    // start with 0
+    // this ignores the value in [...name], and simply adds price name.length times
+    return [...name].reduce(previous => previous + price, 0)
+}
+
+// example of [...string] to be able to use some array methods that
+// aren't defined for a string
