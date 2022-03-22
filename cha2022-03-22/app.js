@@ -18,6 +18,9 @@ function rps(p1, p2){
     // basic rules above could be described in nested ifelse
     // would using  an array or object make this more concise?
     const choices = ['rock', 'paper', 'scissors']
+    if (! (choices.includes(p1) && choices.includes(p2))) {
+        return 'Invalid play. Choose one of rock, paper, or scissors'
+    }
     // if p1 and p2 are adjacent, higher index wins
     // if p1 and p2 are not adjacent, lower index wins
     const position1 = choices.indexOf(p1)
