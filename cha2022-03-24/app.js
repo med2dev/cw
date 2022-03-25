@@ -9,11 +9,13 @@ const multiply = (a, b) => a * b
 
 // summing a b times
 function multiply(a, b){
-    let res = 0
-    for (i == 0; i < b; i++){
-        res += a
-    }
-    return res
+    if (typeof(a) == 'number' && typeof(b) == 'number'){
+        let res = 0
+        for (i == 0; i < b; i++){
+            res += a
+        }
+        return res
+    } 
 }
 
 // array method
