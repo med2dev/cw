@@ -19,3 +19,5 @@ function countSheep(num){
 
 // listcompesque js solution. consider
 const countSheepClever = n =>[...Array(n).keys()].map(x=>`${x+1} sheep...`).join``
+// [...Array(n).keys()] idiom: a way to turn an array of undefined elements into an interator object
+// With an iterator object, you can use things like map to populate an array with undefined elements
