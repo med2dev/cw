@@ -11,3 +11,10 @@ stringToArray('Hello World') // ['Hello', 'World']
 function stringToArray(string){
     return string.split(' ')
 }
+
+// or
+const stringToArray = s => s.split(' ')
+
+// account for different white spaces (and the possible double space)
+
+const stringToArray = s => s.split(/\s+/g)
