@@ -10,3 +10,6 @@ String.prototype.isUpperCase = function() {
     // P: change to upper case, compare
     return this.toUpperCase() == this
 }
+
+// learning objective: for an object method
+// refer to the object the method is called on using the keyword 'this'
