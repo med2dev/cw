@@ -4,7 +4,10 @@
 // E:
 dbScale(Math.pow(10, -11)) // 10
 
-function dbScale(intensity){
+
+// readable
+
+function dBScale(intensity){
     // divide by threshold of human hearing
     const adjustedIntensity = intensity / Math.pow(10, -12)
     // take the log for Bel scale
@@ -12,3 +15,6 @@ function dbScale(intensity){
     // multiply by 10 for decibels
     return 10 * belScale
 }
+
+// oneliner
+const dBScale = i => 10 * Math.log10(i / Math.pow(10, -12))
