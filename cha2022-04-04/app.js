@@ -17,3 +17,14 @@ function reverseSeq(n){
     }
     return result
 }
+
+// refactor with array constructor
+
+function reverseSeq2(n){
+    return Array.from({length: n}, () => n--)
+}
+
+// Array constructor can accept a length property, in addition to the standard arrayLike object, Map function, and this Argument
+// Syntax in this case: Array.from({length: value}, mapFn)
+// Here the map function takes in no argument, walks along the array of length n, 
+// and for each element, returns the value of the variable n, and THEN decrements it
