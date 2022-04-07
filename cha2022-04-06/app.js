@@ -3,6 +3,10 @@
 
 // E:
 firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]) // 6
+// failure
+firstNonConsecutive([1, 2]) // null
+
+
 
 function firstNonConsecutive(arr){
     // taking an array and return a single value
@@ -20,6 +24,26 @@ function firstNonConsecutive(arr){
     // if you make it all the way through and don't find a nonconsecutive array
     // return null
     return null
+}
 
+// const firstNonConsecutive = 
+// function firstNonConsecutive(arr){
+//     // reduce takes previous, cumulative, and initial
+//     // Here you don't need initial, you want to start with the second element
+//     arr.reduce( (previous, current) =>{
+//         if (current != previous + 1) return current
+//         return null 
+//     })
+// }
+
+// after some tinkering, reduce is a bit of a pain here, but consider a find solution
+//  Array.prototype.find() should be considered when you are looking for an element
+// that satisfies a condition
+
+function firstNonConsecutive(arr){
+    // return arr.find((element, index, array) => element != array[0] + index) || null
+    // above fails to account for the case where a falsey value is actually correct (0)
+    const res = arr.find( (element, index, array) => element != array[0] + index)
+    return typeof(res) == 'undefined' ? null : result
 
 }
