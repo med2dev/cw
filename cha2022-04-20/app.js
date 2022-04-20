@@ -19,3 +19,12 @@ function gooseFilter(birds){
     })
     return notgeese
 }
+
+// refactor using Array.filter
+function gooseFilterUseFilter(birds){
+    const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+    return birds.filter(element => ! geese.includes(element))
+}
+
+// filter here uses a filter function that returns all elements of an array
+// for which the filter function is true
