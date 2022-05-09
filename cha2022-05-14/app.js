@@ -5,9 +5,9 @@
 // [1, 2, 3] --> [2, 4, 6]
 
 // PREP
-// Parameters: Will it always be integeres? Are we going to be given any special characters? An empty array?
+// Parameters: An array of integers
 
-// Return: return an array
+// Return: return an array of integers
 
 
 // Examples:
