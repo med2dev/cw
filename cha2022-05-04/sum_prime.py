@@ -1,3 +1,9 @@
+"""
+given an integer array and your task is to return the sum of elements occupying prime-numbered indices.
+
+The first element of the array is at index 0.
+"""
+
 def is_prime(n):
     if n < 3: return n == 2
     if not n%2: return False
