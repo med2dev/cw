@@ -1,9 +1,9 @@
 //PREP
 
-// In a one-dimensional ocean, will the shark reach you before you get to the pontoon or not
+// In a 1D ocean, will the shark reach you before you get to the pontoon or not?
 
 //P
-// A set of nonnegative numbers, all integers in the examples
+// The following onnegative numbers, all integers in the examples
 //  pontoonDistance
 //  sharkDistance (from the pontoon)
 //  youSpeed
