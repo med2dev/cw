@@ -11,3 +11,6 @@ function digitize(n){
     // then convert back to number
     return [...String(n)].reverse().map(Number)
 }
+
+// note that you don't need to make element explicit when passing a single unary function
+// arr.map(e => Number(e)) is equivalent to arr.map(Number)
