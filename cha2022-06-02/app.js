@@ -11,3 +11,6 @@ function sumStr(a, b){
     // sum and coerce back to string
     const result = String(numA + numB)
 }
+
+// one liner
+const sumStrOneLiner = (a, b) => String(Number(a) + Number(b))
