@@ -8,6 +8,13 @@ hexToDec("FF") // 255
 
 
 function hexToDec(hexString){
+    // account for negatives
+    let factor = 1
+    let  toAnalyze= hexString
+    if (hexString[0] == '-'){
+        factor = -1
+        toAnalyze = hexString.substring(1)
+    }
     // object with decimal values for hex digits
     const hexvals = {
         '0': 0,
@@ -28,7 +35,7 @@ function hexToDec(hexString){
         'f': 15
     }
     // convert string to lowercase, separate characters to an array
-    let hexArr = hexString.toLowerCase().split('')
+    let hexArr = toAnalyze.toLowerCase().split('')
     // reverse array, so that digits are in increasing order
     hexArr = hexArr.reverse()
     // initialize value at 0
@@ -37,5 +44,5 @@ function hexToDec(hexString){
     hexArr.forEach((e, i) => {
         res += (hexvals[e] * Math.pow(16, i))
     })
-    return res
+    return res * factor
 }
