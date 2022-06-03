@@ -46,3 +46,7 @@ function hexToDec(hexString){
     })
     return res * factor
 }
+
+// use builtin
+
+const hexToDec2 = hexString => parseInt(hexString, 16)
