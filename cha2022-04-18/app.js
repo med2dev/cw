@@ -14,3 +14,10 @@ function isPalindrome(s){
     return teststring == teststring.reverse()
 
 }
+
+// Node1.4 doesn't have a string reverse method. You have to convert to array
+
+function isPalindromeObsolete(s){
+    const teststring = s.toLowerCase()
+    return teststring == teststring.split('').reverse().join('')
+}
